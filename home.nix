@@ -19,8 +19,11 @@
 	dotDir = ".config/zsh/";
   };
 
-  programs.neovim.enable = true;
-  programs.neovim.vimAlias = true;
-  programs.neovim.viAlias = true;
+  # Neovim config
+  programs.neovim = {
+    enable = true;
+    vimAlias = true;
+    viAlias = true;
+  };
 
 }

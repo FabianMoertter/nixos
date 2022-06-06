@@ -145,10 +145,6 @@
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
 
-  services.postgresql = {
-  	enable = true;
-	packages = pkgs.postgresql_14;
-	};
 
 
   # Open ports in the firewall.
