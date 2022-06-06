@@ -27,7 +27,7 @@
         fabian-desktop = lib.nixosSystem {
 	inherit system;
 	modules = [
-	  ./system/configuration.nix
+	  ./system/desktop.nix
 	  home-manager.nixosModules.home-manager {
 	    home-manager.useGlobalPkgs = true;
 	    home-manager.useUserPackages = true;

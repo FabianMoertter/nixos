@@ -7,7 +7,7 @@
 {
   imports =
     [
-      ./hardware-configuration.nix
+      ./desktop-hardware-configuration.nix
     ];
 
   environment.variables.EDITOR = "nvim";

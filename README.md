@@ -1,6 +1,6 @@
 # NixOS
 
-My NixOS configuration.
+My NixOS configuration for three devices.
 
 ## Installation
 

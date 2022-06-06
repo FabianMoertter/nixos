@@ -11,6 +11,7 @@
     htop
     tmux
     alacritty
+    zathura
   ];
 
 
