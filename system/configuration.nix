@@ -6,20 +6,12 @@
 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [
       ./hardware-configuration.nix
     ];
 
   environment.variables.EDITOR = "nvim";
 
-#  nixpkgs.overlays = [
-#  	(self: super: {
-#		neovim = super.neovim.override {
-#			viAlias = true;
-#			vimAlias = true;
-#			};
-#		})
-#	];
 
   # nix flakes
   nix.package = pkgs.nixFlakes;
