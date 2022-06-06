@@ -3,17 +3,20 @@
 {
   programs.home-manager.enable = true;
 
-  programs.htop.enable = true;
-
-  programs.alacritty.enable = true;
-
-  programs.tmux.enable = true;
-
   home.username = "fabian";
   home.homeDirectory = "/home/fabian";
 
+  home.packages = with pkgs; [
+    exa
+    htop
+    tmux
+    alacritty
+  ];
+
+
   home.stateVersion = "22.05";
 
+  # zsh
   programs.zsh = {
   	enable = true;
 	dotDir = ".config/zsh/";
@@ -25,5 +28,14 @@
     vimAlias = true;
     viAlias = true;
   };
+
+  # git
+  programs.git = {
+    enable = true;
+    userEmail = "fabian.moertter@gmx.net";
+    userName = "Fabian Moertter";
+  };
+
+
 
 }

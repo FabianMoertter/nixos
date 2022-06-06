@@ -6,3 +6,11 @@ My NixOS configuration.
 
 ## Documentation
 
+| Program                              | Name                                                                                                                           |
+| :---                                 | :---                                                                                                                           |
+| Code Editor                          | Neovim|
+| Shell                                | zsh|
+| Terminal Emulator                    | [alacritty](#alacritty) |
+
+
+
