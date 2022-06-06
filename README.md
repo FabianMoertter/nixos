@@ -10,7 +10,7 @@ My NixOS configuration.
 | :---                                 | :---                                                                                                                           |
 | Code Editor                          | Neovim|
 | Shell                                | zsh|
-| Terminal Emulator                    | [alacritty](#alacritty) |
+| Terminal Emulator                    | alacritty |
 
 
 
