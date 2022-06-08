@@ -12,6 +12,7 @@
     tmux
     alacritty
     zathura
+    skypeforlinux
   ];
 
 

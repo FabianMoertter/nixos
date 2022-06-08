@@ -102,7 +102,8 @@
   users.users.fabian = {
     isNormalUser = true;
     description = "fabian";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "vboxuser"];
+    shell = "${pkgs.zsh}/bin/zsh";
   };
 
   users.users.eva = {
@@ -114,6 +115,9 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  services.xserver.videoDrivers = ["nvidia"];
+  hardware.opengl.enable = true;
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -121,7 +125,6 @@
   glances
   git
   firefox
-    vim
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -137,6 +140,11 @@
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
 
+
+
+  virtualisation.virtualbox.host.enable = true;
+  users.extraGroups.vboxuser.members = [ "user-with-access-to-virtualbox" ];
+  virtualisation.virtualbox.host.enableExtensionPack = true;
 
 
   # Open ports in the firewall.
