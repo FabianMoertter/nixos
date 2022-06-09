@@ -22,6 +22,10 @@
   programs.zsh = {
   	enable = true;
 	dotDir = ".config/zsh/";
+	shellAliases = {
+	  ll = "exa -al";
+	  c = "clear";
+	};
   };
 
   # Neovim config
